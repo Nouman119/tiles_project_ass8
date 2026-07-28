@@ -1,0 +1,100 @@
+{
+  "tiles": [
+    {
+      "id": "tile_002",
+      "title": "Marble White Carrara",
+      "description": "Luxury marble tile with natural Carrara veining",
+      "image": "/images/tiles/1.webp",
+      "category": "marble",
+      "price": 89.99,
+      "currency": "USD",
+      "dimensions": "80x80 cm",
+      "material": "Marble",
+      "inStock": true
+    },
+    {
+      "id": "tile_003",
+      "title": "Matte Grey Porcelain",
+      "description": "Non-slip matte finish porcelain tile for bathroom & kitchen",
+      "image": "/images/tiles/2.webp",
+      "category": "porcelain",
+      "price": 52.50,
+      "currency": "USD",
+      "dimensions": "60x120 cm",
+      "material": "Porcelain",
+      "inStock": true
+    },
+    {
+      "id": "tile_004",
+      "title": "Vintage Moroccan Pattern",
+      "description": "Hand-painted style ceramic tile with Moroccan motif",
+      "image": "/images/tiles/3.webp",
+      "category": "ceramic",
+      "price": 67.25,
+      "currency": "USD",
+      "dimensions": "20x20 cm",
+      "material": "Ceramic",
+      "inStock": false
+    },
+    {
+      "id": "tile_005",
+      "title": "Wood Look Oak Plank",
+      "description": "Ceramic wood-grain tile that mimics natural oak flooring",
+      "image": "/images/tiles/4.webp",
+      "category": "wood-look",
+      "price": 38.75,
+      "currency": "USD",
+      "dimensions": "15x90 cm",
+      "material": "Ceramic",
+      "inStock": true
+    },
+    {
+      "id": "tile_006",
+      "title": "Terrazzo Multicolor Chip",
+      "description": "Modern terrazzo tile with colorful stone chips and cement base",
+      "image": "/images/tiles/5.webp",
+      "category": "terrazzo",
+      "price": 74.00,
+      "currency": "USD",
+      "dimensions": "60x60 cm",
+      "material": "Terrazzo",
+      "inStock": true
+    },
+    {
+      "id": "tile_007",
+      "title": "Glossy Black Metro",
+      "description": "Classic subway tile with high gloss black finish",
+      "image": "/images/tiles/6.webp",
+      "category": "ceramic",
+      "price": 29.99,
+      "currency": "USD",
+      "dimensions": "10x20 cm",
+      "material": "Ceramic",
+      "inStock": true
+    },
+    {
+      "id": "tile_008",
+      "title": "Travertine Beige Rustic",
+      "description": "Natural travertine stone tile with tumbled edge finish",
+      "image": "/images/tiles/7.webp",
+      "category": "natural-stone",
+      "price": 96.50,
+      "currency": "USD",
+      "dimensions": "40x60 cm",
+      "material": "Travertine",
+      "inStock": false
+    },
+    {
+      "id": "tile_009",
+      "title": "3D Wave White Texture",
+      "description": "Contemporary 3D textured wall tile with wave pattern",
+      "image": "/images/tiles/8.webp",
+      "category": "decorative",
+      "price": 58.90,
+      "currency": "USD",
+      "dimensions": "30x60 cm",
+      "material": "Porcelain",
+      "inStock": true
+    }
+  ]
+}
