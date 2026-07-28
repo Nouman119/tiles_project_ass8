@@ -12,7 +12,7 @@ const Footer = () => {
         <div>
           <h2 className="text-xl font-bold mb-4">Tiles Bazar</h2>
           <p className="text-gray-400 mb-4 text-sm">
-            Creating amazing digital experiences for businesses worldwide. Follow us to stay updated.
+            Premium tiles and modern interior solutions for your dream spaces. Follow us to stay updated with our latest collections.
           </p>
           <div className="flex gap-4">
             <FaFacebook className="text-xl cursor-pointer hover:text-blue-500"/>
