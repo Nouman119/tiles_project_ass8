@@ -17,12 +17,15 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
+<<<<<<< HEAD
     "baseUrl": ".", 
     "paths": {
       "@/*": ["./src/*"],
       "@app/*": ["./src/app/*"] 
     },
     "ignoreDeprecations": "6.0",
+=======
+>>>>>>> e4ed638e09b09e6d526745aba9afa0d8af762e57
     "plugins": [
       {
         "name": "next"
@@ -40,4 +43,8 @@
   "exclude": [
     "node_modules"
   ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e4ed638e09b09e6d526745aba9afa0d8af762e57
