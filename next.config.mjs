@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  async rewrites() {
+    return [
+      {
+        source: '/auth-proxy/:path*',
+        destination: 'http://localhost:3000/api/auth/:path*',
+      },
+    ];
+  },
 };
 
 export default nextConfig;
