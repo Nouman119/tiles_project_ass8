@@ -3,8 +3,13 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation'; // Next.js router for redirection
+<<<<<<< HEAD
 import { authClient } from '@/lib/auth-client'; // Import better-auth client with relative path
 import Footer from '@/app/components/Footer';  // Import existing Footer component
+=======
+import { authClient } from '../../lib/auth-client'; // Import better-auth client with relative path
+import Footer from '../../app/components/Footer';  // Import existing Footer component
+>>>>>>> afa00ec (Rearrange)
 import { User, Image as ImageIcon, X, UserCircle } from 'lucide-react'; // Import UserCircle for avatar fallback
 import toast from 'react-hot-toast'; 
 
