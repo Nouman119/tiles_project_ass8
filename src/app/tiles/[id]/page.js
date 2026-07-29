@@ -1,7 +1,7 @@
 "use client";
 import { useParams, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import Loader from '../../components/Loader'; 
+import Loader from '@/app/components/Loader'; 
 
 export default function TileDetails() {
   const { id } = useParams();

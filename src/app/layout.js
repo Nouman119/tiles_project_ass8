@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  title: "Titles Bazar",
   title: "TileAura",
   description: "Inspire. Design. Live.",
 };

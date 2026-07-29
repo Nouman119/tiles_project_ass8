@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation'; // 1. Import useRouter for programmatic redirection
-import { authClient } from '../../lib/auth-client'; // 2. Import better-auth client to check session status
+import { authClient } from '@/lib/auth-client'; // 2. Import better-auth client to check session status
 import Loader from './Loader'; 
 
 const FeaturedTiles = () => {
