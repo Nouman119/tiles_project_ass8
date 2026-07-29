@@ -2,10 +2,10 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation'; 
-import { authClient } from '../../lib/auth-client'; 
-import SearchBanner from "../components/SearchBanner"; 
-import Footer from "../components/Footer/Footer"; 
-import Loader from '../components/Loader';
+import { authClient } from '@/lib/auth-client'; 
+import SearchBanner from "@/app/components/SearchBanner"; 
+import Footer from '@/app/components/Footer';  // Import existing Footer component
+import Loader from '@/app/components/Loader';
 
 const AllTilesPage = () => {
   const router = useRouter();
