@@ -27,6 +27,7 @@ const db = (await clientPromise).db("tiles_database");
 
 export const auth = betterAuth({
   database: mongodbAdapter(db),
+  baseURL: process.env.BETTER_AUTH_URL || "https://tiles-project-ass8.vercel.app",
   emailAndPassword: {
     enabled: true,
   },
@@ -36,9 +37,13 @@ export const auth = betterAuth({
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     },
   },
-  trustedOrigins: ["http://localhost:3000"],
+  trustedOrigins: ["http://localhost:3000",
+    "https://tiles-project-ass8.vercel.app"
+  ],
   cors: {
-    origin: ["http://localhost:3000"],
+    origin: ["http://localhost:3000",
+      "https://tiles-project-ass8.vercel.app"
+    ],
     credentials: true,
   },
 });
