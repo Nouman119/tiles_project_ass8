@@ -4,11 +4,8 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation'; // Next.js router for redirection
 import { authClient } from '../../lib/auth-client'; // Import better-auth client with relative path
-<<<<<<< HEAD
 import Footer from '@/app/components/Footer';  // Import existing Footer component
-=======
 import Footer from '../../components/Footer'; // Import existing Footer component
->>>>>>> e4ed638e09b09e6d526745aba9afa0d8af762e57
 import { User, Image as ImageIcon, X, UserCircle } from 'lucide-react'; // Import UserCircle for avatar fallback
 import toast from 'react-hot-toast'; 
 
