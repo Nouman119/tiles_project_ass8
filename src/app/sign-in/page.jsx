@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation'; // Next.js router for redirection
 import { authClient } from '@/lib/auth-client'; // Import better-auth client with relative path
-import Footer from '@/app/components/Footer';  // Import existing Footer component
+import Footer from '@/app/components/Footer/Footer';  // Import existing Footer component
 import toast from 'react-hot-toast'; // Import react-hot-toast for notifications
 
 export default function SignInPage() {

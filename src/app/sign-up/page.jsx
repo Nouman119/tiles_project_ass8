@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation'; // Next.js router for redirection
 import { authClient } from '@/lib/auth-client';
-import Footer from '@/app/components/Footer';  // Import existing Footer component
+import Footer from '@/app/components/Footer/Footer';  // Import existing Footer component
 import toast from 'react-hot-toast'; 
 
 export default function SignUpPage() {

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation'; 
 import { authClient } from '@/lib/auth-client'; 
 import SearchBanner from "@/app/components/SearchBanner"; 
-import Footer from '@/app/components/Footer';  // Import existing Footer component
+import Footer from '@/app/components/Footer/Footer';  // Import existing Footer component
 import Loader from '@/app/components/Loader';
 
 const AllTilesPage = () => {
