@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Quick Message (DaisyUI input styling) */}
+        {/* Message (DaisyUI input styling) */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Quick Message</h3>
           <input type="email" placeholder="Your email" className="input input-bordered w-full mb-2 bg-gray-800 border-none text-sm text-white" />
