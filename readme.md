@@ -31,3 +31,4 @@ Here are the core packages and dependencies utilized in this project:
 - `lucide-react` - Modern, highly customizable vector icons
 - `swiper` - Modern touch slider and carousel component for React
 - `tailwindcss` / styling utilities - For rapid and responsive UI styling
+- `daisyui` - Tailwind CSS component library for building clean and responsive UI components
