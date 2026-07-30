@@ -2,7 +2,6 @@ import { betterAuth } from "better-auth";
 import { mongodbAdapter } from "better-auth/adapters/mongodb";
 import { MongoClient } from "mongodb";
 
-// MongoDB কানেকশন স্ট্রিং চেক করা
 const uri = process.env.MONGODB_URI;
 
 if (!uri) {
@@ -28,7 +27,6 @@ const db = (await clientPromise).db("tiles_database");
 export const auth = betterAuth({
   database: mongodbAdapter(db),
   
-  // ডাইনামিক বা এনভায়রনমেন্ট ভ্যারিয়েবলের ঝামেলা এড়াতে এখানে সরাসরি মূল ডোমেন ফিক্সড করে দেওয়া হলো
   baseURL: "https://tiles-project-ass8.vercel.app",
   
   emailAndPassword: {

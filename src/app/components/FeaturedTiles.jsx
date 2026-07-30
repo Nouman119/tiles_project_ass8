@@ -1,8 +1,8 @@
-"use client"; // Required for client-side data fetching and authentication hooks
+"use client";
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation'; // 1. Import useRouter for programmatic redirection
-import { authClient } from '@/lib/auth-client'; // 2. Import better-auth client to check session status
+import { useRouter } from 'next/navigation'; 
+import { authClient } from '@/lib/auth-client';
 import Loader from './Loader'; 
 
 const FeaturedTiles = () => {
@@ -13,7 +13,6 @@ const FeaturedTiles = () => {
   // 3. Fetch current user session to check authentication status
   const { data: session } = authClient.useSession();
 
-  // Fetch data from local json-server
   useEffect(() => {
     setLoading(true);
     fetch('/api/tiles')
@@ -28,7 +27,6 @@ const FeaturedTiles = () => {
       });
   }, []);
 
-  // 4. Handle View Details click with authentication check
   const handleViewDetails = (e, tileId) => {
     e.preventDefault();
     if (session) {

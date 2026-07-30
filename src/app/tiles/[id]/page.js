@@ -2,7 +2,7 @@
 import { useParams, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import Loader from '@/app/components/Loader';
-import Footer from '@/app/components/Footer/Footer';  // Import existing Footer component
+import Footer from '@/app/components/Footer/Footer';  
 
 export default function TileDetails() {
   const { id } = useParams();

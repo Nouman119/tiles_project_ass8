@@ -21,7 +21,7 @@ Tiles Bazar is designed to streamline the tile-buying experience for homeowners,
 
 ---
 
-## List of npm Packages Used
+## List of NPM Packages Used
 Here are the core packages and dependencies utilized in this project:
 
 - `next` - React framework for production (App Router, Server Actions)

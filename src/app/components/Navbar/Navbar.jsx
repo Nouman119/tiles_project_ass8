@@ -1,29 +1,24 @@
-"use client"; // 1. Necessary directive for using hooks (usePathname, useSession) in Next.js
+"use client"; 
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation'; // 2. Router for redirection after logout
-import { usePathname } from 'next/navigation'; // 3. Importing usePathname to track current URL
-import { authClient } from '../../../lib/auth-client'; // 4. Import better-auth client to check session and logout
+import { useRouter } from 'next/navigation'; 
+import { usePathname } from 'next/navigation'; 
+import { authClient } from '../../../lib/auth-client'; 
 
 const Navbar = () => {
   const router = useRouter();
-  const pathname = usePathname(); // 5. Get the current active route/path
+  const pathname = usePathname(); 
 
-  // State to control mobile menu open/close toggle
   const [isOpen, setIsOpen] = useState(false);
 
-  // 6. Fetch current user session using better-auth hook
   const { data: session, isPending } = authClient.useSession();
 
-  // 7. Helper function to check if the link is active
   const isActive = (path) => pathname === path;
 
-  // 8. Tailwind classes for active and inactive states
   const activeClass = "text-orange-600 font-medium border-b-2 border-orange-600 pb-1";
   const inactiveClass = "text-gray-600 hover:text-gray-900 transition-colors";
 
-  // 9. Handle user logout action
   const handleLogout = async () => {
     await authClient.signOut({
       fetchOptions: {
@@ -35,7 +30,6 @@ const Navbar = () => {
   };
 
   return (
-    // 10. Main navigation container styled with Tailwind CSS
     <nav className="w-full bg-white border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
@@ -62,7 +56,6 @@ const Navbar = () => {
           {/* Action Buttons & User Profile Dropdown Section & Mobile Hamburger */}
           <div className="flex items-center gap-2 md:gap-4">
             
-            {/* User Session Handling */}
             {isPending ? (
               <div className="w-8 h-8 rounded-full bg-gray-200 animate-pulse"></div>
             ) : session ? (
@@ -116,12 +109,10 @@ const Navbar = () => {
               aria-label="Toggle Menu"
             >
               {isOpen ? (
-                // Close Icon (X)
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
               ) : (
-                // Hamburger Icon
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
@@ -132,7 +123,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Dropdown Menu Drawer */}
       {isOpen && (
         <div className="md:hidden bg-white border-b border-gray-200 px-4 pt-2 pb-6 space-y-3 shadow-md">
           <Link 

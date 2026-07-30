@@ -1,9 +1,7 @@
-// src/app/components/Marquee/MarqueeSection.jsx
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 
 const MarqueeSection = () => {
-  // Array of items to display in the marquee
   const items = [
     "✨ New Arrivals: Calacatta Oro Marble",
     "|",
@@ -13,7 +11,6 @@ const MarqueeSection = () => {
   ];
 
   return (
-    // Background color set to black as per design
     <div className="w-full bg-[#1a1a1a] py-5 overflow-hidden">
       <Marquee gradient={false} speed={50}>
         <div className="flex gap-8 px-4">

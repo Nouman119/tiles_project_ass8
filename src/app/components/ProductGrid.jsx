@@ -1,6 +1,6 @@
 export default function ProductGrid({ products }) {
   return (
-    /* Responsive Grid: 1 col on mobile, 2 on tablet, 4 on desktop */
+    /* Responsive Grid */
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {products.map((product) => (
         <div key={product.id} className="border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">

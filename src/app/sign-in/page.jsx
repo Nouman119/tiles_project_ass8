@@ -1,21 +1,19 @@
-"use client"; // Required for client-side interactivity and hooks in Next.js
+"use client";
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation'; // Next.js router for redirection
-import { authClient } from '@/lib/auth-client'; // Import better-auth client with relative path
-import Footer from '@/app/components/Footer/Footer';  // Import existing Footer component
-import toast from 'react-hot-toast'; // Import react-hot-toast for notifications
+import { useRouter } from 'next/navigation'; 
+import { authClient } from '@/lib/auth-client'; 
+import Footer from '@/app/components/Footer/Footer';  
+import toast from 'react-hot-toast'; 
 
 export default function SignInPage() {
   const router = useRouter();
 
-  // State management for form inputs and loading state
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
 
-  // Handle email/password sign-in submission
   const handleSignIn = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -46,7 +44,6 @@ export default function SignInPage() {
     }
   };
 
-  // Handle Google Social Sign In
   const handleGoogleSignIn = async () => {
     try {
       await authClient.signIn.social({
@@ -59,20 +56,15 @@ export default function SignInPage() {
   };
 
   return (
-    // Main container structured with flex-col and justify-between to keep card centered and push footer to the bottom
     <div className="min-h-screen flex flex-col justify-between bg-cover bg-center" 
          style={{ backgroundImage: "url('/images/sign in.webp')" }}>
       
-      {/* Empty div acting as a spacer to perfectly center the sign-in card vertically */}
       <div></div>
 
-      {/* Sign In Card with shadow, rounded corners, and proper spacing */}
       <div className="bg-white w-full max-w-md p-8 rounded-2xl shadow-xl relative mx-auto my-8">
         
-        {/* Close Button / Home Redirect */}
         <Link href="/" className="absolute top-4 right-4 text-gray-500 hover:text-orange-700 text-lg">✕</Link>
 
-        {/* Header Section */}
         <div className="text-center mb-6">
           <h2 className="text-2xl font-bold text-gray-800 mb-2">Welcome Back</h2>
           <p className="text-sm text-gray-600">
@@ -131,7 +123,6 @@ export default function SignInPage() {
             />
           </div>
 
-          {/* Submit Button */}
           <button 
             type="submit" 
             disabled={loading}
@@ -142,7 +133,6 @@ export default function SignInPage() {
         </form>
       </div>
 
-      {/* Render the pre-existing Footer component at the bottom */}
       <Footer />
       
     </div>
